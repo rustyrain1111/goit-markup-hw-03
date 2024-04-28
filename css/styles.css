@@ -30,6 +30,11 @@ a {
   text-decoration: none;
 }
 
+section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
 button {
   cursor: pointer;
 }
@@ -42,10 +47,16 @@ button {
   margin-right: auto;
 }
 
+.container-header {
+  display: flex;
+  align-items: center;
+}
+
 /* ============== MENU ==============  */
 
 .page-nav {
   display: flex;
+  align-items: center;
 }
 
 .page-header {
@@ -55,6 +66,7 @@ button {
 
 .menu {
   display: flex;
+  gap: 40px;
 }
 
 .page-logo {
@@ -65,6 +77,7 @@ button {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  margin-right: 76px;
 }
 
 .logo-color {
@@ -77,6 +90,8 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  padding: 24px 0;
+  display: block;
 }
 
 .menu-link:hover,
@@ -86,6 +101,17 @@ button {
 
 .menu-address {
   font-style: normal;
+  margin-left: auto;
+}
+
+.address {
+  display: flex;
+  gap: 40px;
+}
+
+.address-list {
+  display: flex;
+  gap: 40px;
 }
 
 .menu-address-link {
@@ -104,7 +130,14 @@ button {
 /* ============== HERO ============== */
 
 .order-service {
+  display: flex;
   background: #2e2f42;
+}
+
+.order-container {
+  margin: 0 auto;
+  padding-top: 68px;
+  padding-bottom: 68px;
 }
 
 .main-title {
@@ -114,15 +147,27 @@ button {
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
+  padding-bottom: 48px;
+  max-width: 497px;
 }
 
 .button-order-service {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
+  padding: 16px 32px;
+  border-radius: 4px;
+  padding: 16px 32px;
+  width: 169px;
+  height: 56px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background: #4d5ae5;
   color: #fff;
-  background-color: #4d5ae5;
+}
+
+.button-order-flex {
+  /* display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 10px; */
 }
 
 .button-order-service:hover,
@@ -136,6 +181,17 @@ button {
 }
 
 .benefits-title {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .benefits-list {
@@ -152,6 +208,7 @@ button {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  padding-bottom: 8px;
 }
 
 .benefits-text {
@@ -160,6 +217,7 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  padding-right: 24px;
 }
 
 /* ============== OUR TEAM ============== */
@@ -176,6 +234,7 @@ button {
   text-align: center;
   color: #2e2f42;
   text-transform: capitalize;
+  padding-bottom: 72px;
 }
 
 .our-team-list {
@@ -191,6 +250,8 @@ button {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
+  padding-top: 32px;
+  padding-bottom: 8px;
 }
 
 .our-team-item {
@@ -204,6 +265,7 @@ button {
   letter-spacing: 0.02em;
   text-align: center;
   color: #434455;
+  padding-bottom: 32px;
 }
 
 /* ============== OUR PORTFOLIO  ============== */
@@ -218,6 +280,7 @@ button {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
+  padding-bottom: 72px;
 }
 
 .our-portfolio-list {
@@ -236,6 +299,8 @@ button {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  padding-top: 32px;
+  padding-bottom: 8px;
 }
 
 .our-portfolio-text {
@@ -249,7 +314,10 @@ button {
 /* ============== FOOTER  ============== */
 
 .footer-block {
+  display: flex;
   background: #2e2f42;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .footer-page-logo {
@@ -268,4 +336,10 @@ button {
 
 .footer-text {
   color: #f4f4fd;
+  padding-top: 16px;
+}
+
+.container-footer {
+  width: 264px;
+  height: 112px;
 }
