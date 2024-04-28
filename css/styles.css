@@ -152,22 +152,15 @@ button {
 }
 
 .button-order-service {
+  display: block;
+  margin: auto auto;
   padding: 16px 32px;
   border-radius: 4px;
-  padding: 16px 32px;
   width: 169px;
   height: 56px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background: #4d5ae5;
   color: #fff;
-}
-
-.button-order-flex {
-  /* display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-direction: row;
-  gap: 10px; */
 }
 
 .button-order-service:hover,
@@ -313,14 +306,21 @@ button {
 
 /* ============== FOOTER  ============== */
 
-.footer-block {
-  display: flex;
+.footer {
   background: #2e2f42;
   padding-top: 100px;
   padding-bottom: 100px;
 }
 
+.container-footer {
+  /* display: block; */
+  /* max-width: 264px; */
+  /* height: 112px; */
+  /* padding-left: 156px; */
+}
+
 .footer-page-logo {
+  display: inline-block;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -337,9 +337,5 @@ button {
 .footer-text {
   color: #f4f4fd;
   padding-top: 16px;
-}
-
-.container-footer {
-  width: 264px;
-  height: 112px;
+  max-width: 264px;
 }
