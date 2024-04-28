@@ -57,6 +57,7 @@ button {
 .page-nav {
   display: flex;
   align-items: center;
+  margin: auto;
 }
 
 .page-header {
@@ -187,15 +188,12 @@ button {
 
 .benefits-list {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   gap: 24px;
 }
 
 .benefits-item {
-}
-
-.benefits-list:first-child {
-  width: calc((100% - 72px) / 3);
+  width: calc((100% - 3 * 24px) / 4);
 }
 
 .benefits-list-title {
