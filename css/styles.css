@@ -194,8 +194,8 @@ button {
 .benefits-item {
 }
 
-.benefits-item :first-child {
-  width: calc((100% - 72px) / 4);
+.benefits-list:first-child {
+  width: calc((100% - 72px) / 3);
 }
 
 .benefits-list-title {
@@ -284,7 +284,6 @@ button {
 
 .our-portfolio-list {
   display: flex;
-  /* justify-content: space-between; */
   flex-wrap: wrap;
   gap: 48px 24px;
 }
